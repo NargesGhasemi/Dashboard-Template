@@ -10,10 +10,10 @@ body {
     margin: 0;
 }
 /* ///////////////////////////////////////////////////////// */
-.sideMenu{
+.sideMenu {
 background-color: white;
 width: 25%;
-height: 700px;
+/* height: 700px; */
 border-right: 1px solid #bbb;
 display: flex;
 float: left;
@@ -23,11 +23,11 @@ left: 0;
 bottom: 0;
 }
 
-.sideContent{
+.sideContent {
     width: 100%;
 }
 
-.menuIcon{
+.menuIcon {
     width: 30px;
     height: 30px;
     float: left;
@@ -57,15 +57,14 @@ padding: 8px;
 }
 
 /* ////////////////////////////////////////////////////////////// */
-.main{
-    /* border: 1px solid red; */
+.main {
     width:75%;
     background-color: #f4f3ef;
     display:  inline-grid;
     float: right;
 }
 
-.title{
+.title {
     padding: 20px;
     text-align: center;
     color: #66615b;
@@ -76,7 +75,7 @@ padding: 8px;
     margin: 0 auto;
 }
 
-.header{
+.header {
  height: 70px;
  width: 100%;
  padding: 5px;
@@ -84,16 +83,15 @@ padding: 8px;
   display: block;
 }
 
-.sideHeader{
+.sideHeader {
 border: none; 
-
 }
 
-.header span{
+.header span {
     padding: 20px;
 }
 
-.header span.hmbIcon{
+.header span.hmbIcon {
     display: none;
     float: right;
     padding: 15px;
@@ -105,50 +103,52 @@ border: none;
    font-weight:600;
    float: left;
 }
-.navLink{
+
+.navLink {
     float: right;
     padding: 10px;
     display: block;
 }
-.navLink a{
+
+.navLink a {
     float: left;
     color: #8a8989;
     text-decoration: none;
     padding:3px 0 0 5px;
 }
 
-.navLink a:hover{
+.navLink a:hover {
 color:#68b3c8;
 cursor: pointer;
 }
 
-.dashboard:hover{
+.dashboard:hover {
 color: #5e5e5e;
 cursor: pointer;
-
 }
-.navLinkImg{
+
+.navLinkImg {
     width: 20px;
     height: 20px;
     float: left;
 }
 
-.content{
+.content {
 display: block;
 }
 
-.row{
+.row {
 display: block;
 width: 100%;
 }
 
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     /* background-color: DodgerBlue; */
 }
 
-.card{
+.card {
     background-color: #ffffff;
     color: #252422;
     width: 337px;
@@ -158,53 +158,53 @@ width: 100%;
     box-shadow: 0px 2px 2px rgba(204,197,185,0.5);
 }
 
-.cardContent{
+.cardContent {
 padding: 15px 15px 15px 10px;
 }
 
-.cardRow{
+.cardRow {
     font-size: 15px;
     width: 100%;
     height: 60px;
 }
 
-.cardCol{
+.cardCol {
     width: 50%;
     float: left;
 }
 
-.cardCol img{
+.cardCol img {
     padding-left: 15px;
 }
 
-.cardName{
+.cardName {
     text-align: right;
 }
 
-.cardImg{
+.cardImg {
     width: 50px;
     height: 50px;
     margin: 10px;
     /* float: left; */
 }
 
-.cardNum{
+.cardNum {
     margin-bottom: 7px;
     margin-top: 8px;
     font-size: 30px;  
 }
 
-hr{
+hr {
     margin: 4px;
     border: 0.5px solid #e6e6e6;
 }
 
-.cardFooter{
+.cardFooter {
 margin-bottom: 2px;
 height: 40px;
 }
 
-.footerName{
+.footerName {
     font-size: 15px;
     color: gray;
     float: left;
@@ -212,13 +212,13 @@ height: 40px;
     padding-left: 0;
 }
 
-.footerImg{
+.footerImg {
     float: left;
     padding: 5px;
 }
 
 /* ///////////////////////////////////////////////// */
-.userBehave{
+.userBehave {
     background-color: #ffffff;
     color: #252422;
     width: 95%;
@@ -228,37 +228,37 @@ height: 40px;
     box-shadow: 0px 2px 2px rgba(204,197,185,0.5); 
 }
 
-.UBName{
+.UBName {
 font-size: 18px;
 padding: 10px 10px 0 10px;
 margin: 0;
 color: rgb(110, 109, 109);
 }
 
-.UBPerform{
+.UBPerform {
     font-size: 15px;
     padding: 5px 10px 0 10px;
     margin:0;
     color: rgb(160, 156, 156); 
 }
 
-.chartTitle{
+.chartTitle {
 height: 70px;
 }
 
-.chartImage{
+.chartImage {
     margin: 20px;
     /* width: 590px; */
     width: 92%;
 }
 
-.Chartbottom{
+.Chartbottom {
     font-size: 15px;
     float: left;
    margin: 2px;
 }
 
-.chartIcon{
+.chartIcon {
 width: 20px;
 height: 20px;
 float: left;
@@ -268,17 +268,17 @@ float: left;
 height: 400px;
 }
 
-.chartDesc{
+.chartDesc {
     height: 25px;
 }
 
-.chartImg{
+.chartImg {
 width :280px;
 height :280px;
 }
 
 /* //////////////////////////////////////// */
-.mainFooter{
+.mainFooter {
     border-top: 1px solid #d4d1d1;
     padding: 25px ;
     height: 70px;
@@ -286,11 +286,11 @@ height :280px;
     font-size: 15px;
 }
 
-.mainFooter > span{
+.mainFooter > span {
     padding: 10px;
 }
 
-.leftFooter{
+.leftFooter {
 float: left;
 }
 
@@ -305,21 +305,25 @@ float: left;
 .rightFooter span {
 float: left;
 }
+
 .rightFooter img {
     height: 28px;
     float: left;
     padding-bottom: 10px
 }
 
-.chartImage img{
+.chartImage img {
     width: inherit;
 }
-#myImage{
+
+#myImage {
     display: block;
 }
-#bigImage{
+
+#bigImage {
     display: none;
 }
+
 .bigImg{
     width: 100%;
 }
@@ -347,16 +351,9 @@ float: left;
      margin: 0 auto;
  }
 
- /* #smallImage {
-  display: none;
- } */
-
  #bigImage {
     display: block;
     width: inherit;
    }
-   /* .navLink{
-       display: none;
-   } */
-   
+ 
 }
