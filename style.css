@@ -328,7 +328,6 @@ float: left;
     width: 100%;
 }
 
-
 @media screen and (max-width :991px) {
 
 .container, .header span.hmbIcon{
@@ -355,5 +354,35 @@ float: left;
     display: block;
     width: inherit;
    }
- 
+}
+
+@media screen and (min-width :1200px){
+    .card {
+        width: 95%;
+    }
+
+    .topCard {
+        width: 185px;
+    }
+
+    .cardNum{
+        font-size: 20px;
+    }
+
+    .container {
+        width: inherit;
+    }
+
+    #smallImage{
+        display: none;
+    }
+
+    #bigImage {
+        display: block;
+        width: inherit;
+       }
+
+    .chartImg {
+        margin: 0 auto;
+    }
 }
