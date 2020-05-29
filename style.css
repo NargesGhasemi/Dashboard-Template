@@ -9,18 +9,20 @@ body {
     font-size: 14;
     margin: 0;
 }
+
 /* ///////////////////////////////////////////////////////// */
+
 .sideMenu {
-background-color: white;
-width: 25%;
-/* height: 700px; */
-border-right: 1px solid #bbb;
-display: flex;
-float: left;
-position: fixed;
-top: 0;
-left: 0;
-bottom: 0;
+    background-color: white;
+    width: 25%;
+    /* height: 700px; */
+    border-right: 1px solid #bbb;
+    display: flex;
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .sideContent {
@@ -47,8 +49,8 @@ bottom: 0;
 }
 
 .menu ul li a {
-float: left;
-padding: 8px;
+  float: left;
+  padding: 8px;
 }
 
 .menu ul li:hover {
@@ -57,6 +59,7 @@ padding: 8px;
 }
 
 /* ////////////////////////////////////////////////////////////// */
+
 .main {
     width:75%;
     background-color: #f4f3ef;
@@ -76,15 +79,15 @@ padding: 8px;
 }
 
 .header {
- height: 70px;
- width: 100%;
- padding: 5px;
- border-bottom:  1px solid #DDDDDD; 
+  height: 70px;
+  width: 100%;
+  padding: 5px;
+  border-bottom:  1px solid #DDDDDD; 
   display: block;
 }
 
 .sideHeader {
-border: none; 
+  border: none; 
 }
 
 .header span {
@@ -118,13 +121,13 @@ border: none;
 }
 
 .navLink a:hover {
-color:#68b3c8;
-cursor: pointer;
+  color:#68b3c8;
+  cursor: pointer;
 }
 
 .dashboard:hover {
-color: #5e5e5e;
-cursor: pointer;
+  color: #5e5e5e;
+  cursor: pointer;
 }
 
 .navLinkImg {
@@ -134,18 +137,17 @@ cursor: pointer;
 }
 
 .content {
-display: block;
+  display: block;
 }
 
 .row {
-display: block;
-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    /* background-color: DodgerBlue; */
 }
 
 .card {
@@ -159,7 +161,7 @@ width: 100%;
 }
 
 .cardContent {
-padding: 15px 15px 15px 10px;
+  padding: 15px 15px 15px 10px;
 }
 
 .cardRow {
@@ -185,7 +187,6 @@ padding: 15px 15px 15px 10px;
     width: 50px;
     height: 50px;
     margin: 10px;
-    /* float: left; */
 }
 
 .cardNum {
@@ -200,8 +201,8 @@ hr {
 }
 
 .cardFooter {
-margin-bottom: 2px;
-height: 40px;
+    margin-bottom: 2px;
+    height: 40px;
 }
 
 .footerName {
@@ -218,6 +219,7 @@ height: 40px;
 }
 
 /* ///////////////////////////////////////////////// */
+
 .userBehave {
     background-color: #ffffff;
     color: #252422;
@@ -229,10 +231,10 @@ height: 40px;
 }
 
 .UBName {
-font-size: 18px;
-padding: 10px 10px 0 10px;
-margin: 0;
-color: rgb(110, 109, 109);
+    font-size: 18px;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+    color: rgb(110, 109, 109);
 }
 
 .UBPerform {
@@ -243,12 +245,11 @@ color: rgb(110, 109, 109);
 }
 
 .chartTitle {
-height: 70px;
+    height: 70px;
 }
 
 .chartImage {
     margin: 20px;
-    /* width: 590px; */
     width: 92%;
 }
 
@@ -259,9 +260,9 @@ height: 70px;
 }
 
 .chartIcon {
-width: 20px;
-height: 20px;
-float: left;
+    width: 20px;
+    height: 20px;
+    float: left;
 }
 
 .chartCardRow {
@@ -269,15 +270,16 @@ height: 400px;
 }
 
 .chartDesc {
-    height: 25px;
+ height: 25px;
 }
 
 .chartImg {
-width :280px;
-height :280px;
+    width :280px;
+    height :280px;
 }
 
 /* //////////////////////////////////////// */
+
 .mainFooter {
     border-top: 1px solid #d4d1d1;
     padding: 25px ;
@@ -291,7 +293,7 @@ height :280px;
 }
 
 .leftFooter {
-float: left;
+    float: left;
 }
 
 .leftFooter span {
@@ -303,7 +305,7 @@ float: left;
 }
 
 .rightFooter span {
-float: left;
+    float: left;
 }
 
 .rightFooter img {
@@ -328,41 +330,77 @@ float: left;
     width: 100%;
 }
 
-@media screen and (max-width :991px) {
+@media screen and (max-width :768px)  {
 
-.container, .header span.hmbIcon{
-    display: block;
- }
+    .container, .header span.hmbIcon{
+        display: block;
+     }
+    
+     .sideMenu, #smallImage, .navLink {
+         display: none;
+     }
+    
+     .main {
+         width: 100%;
+     }
+     
+     .card {
+         width: 95%;
+     }
+    
+     .chartImg {
+         margin: 0 auto;
+     }
+    
+     #bigImage {
+        display: block;
+        width: inherit;
+       }
+    }
 
- .sideMenu, #smallImage, .navLink {
-     display: none;
- }
+ @media screen and (min-width :768px) and (max-width :991px) {
 
- .main {
-     width: 100%;
- }
- 
- .card {
-     width: 95%;
- }
+        .header span.hmbIcon{
+            display: block;
+         }
+        
+        .sideMenu, #smallImage, .navLink {
+             display: none;
+         }
+        
+        .main {
+            width: 100%;
+         } 
+         
+        .card {
+            width: 95%;
+         }  
+        
+        .chartImg {
+            margin: 0 auto;
+         } 
+        
+        #bigImage {
+            display: block;
+            width: inherit;
+        } 
+           
+        .topCard {
+            width: 450px;
+        }
 
- .chartImg {
-     margin: 0 auto;
- }
-
- #bigImage {
-    display: block;
-    width: inherit;
-   }
-}
-
+        .container {
+            width: inherit;
+        }
+    }
+    
 @media screen and (min-width :1200px){
     .card {
         width: 95%;
     }
 
     .topCard {
-        width: 185px;
+        width: 188px;
     }
 
     .cardNum{
@@ -384,5 +422,9 @@ float: left;
 
     .chartImg {
         margin: 0 auto;
+    }
+
+    .userBehave {
+        height: 500px;
     }
 }
