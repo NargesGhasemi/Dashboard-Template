@@ -15,8 +15,6 @@ body {
 .sideMenu {
     background-color: white;
     width: 25%;
-    /* height: 700px; */
-    border-right: 1px solid #bbb;
     display: flex;
     float: left;
     position: fixed;
@@ -27,6 +25,7 @@ body {
 
 .sideContent {
     width: 100%;
+    border-right: 1px solid #bbb;
 }
 
 .menuIcon {
@@ -56,6 +55,11 @@ body {
 .menu ul li:hover {
     color: #66615b;
     cursor: pointer;
+}
+
+.lastMenu {
+    position: fixed;
+    bottom: 0;
 }
 
 /* ////////////////////////////////////////////////////////////// */
@@ -330,6 +334,17 @@ height: 400px;
     width: 100%;
 }
 
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 30px solid #f4f3ef;
+    border-bottom: 20px solid transparent;
+    margin-top: 110px;
+    margin-left: 91%;
+    position: absolute;
+}
+
 @media screen and (max-width :768px)  {
 
     .container, .header span.hmbIcon{
@@ -396,11 +411,12 @@ height: 400px;
     
 @media screen and (min-width :1200px){
     .card {
-        width: 95%;
+        width: 45%;
     }
 
-    .topCard {
-        width: 188px;
+    .card.topCard {
+        width: 21%;
+        margin: 10px 16px;
     }
 
     .cardNum{
